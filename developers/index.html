@@ -1,0 +1,142 @@
+<!DOCTYPE html> 
+
+<html> 
+<head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <title>{Naked CSS 2011} | {Developers}</title> 
+  <meta name="description" content="The idea behind this event is to promote Web Standards. This includes semantic markup,a good hierarchy structure, and of course,a good 'ol play on words. It's time to show off your <body>; ." />
+  <link rel="stylesheet" href="../style.css" type="text/css" />  
+  <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 960px)" href="../mobile.css" />
+<link href='http://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'> 
+<link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'> 
+</head> 
+<body> 
+ 
+ 
+ 
+<header><h1><a href="/">{Naked CSS}</a></h1> 
+    <h3 id="tagline">\\ Show off your &lt;body&gt;//</h3></header> 
+ 
+<div id="content"> 
+
+<div class="posting"> 
+ 
+          
+           <img src="../developers.jpg" alt="Developer Section of Naked CSS 2011" id="card"/>
+          
+
+        
+          
+          
+          
+ 
+          <div class="regular_post"> 
+          
+            <h2>How to participate</h2> 
+<section id="participate">
+Fill out the <a href="#signup">naked day signup form</a>, then your website will be included in the official list within the next hour.
+Then on <em>April 9th, simply  <strong>remove all CSS from your website, stripping it entirely of its design.</strong></em>
+(Optional): Insert the following snippet of markup at the top of your page on the day of.<br>
+<pre><code>&lt;h3&gt;What happened to the design?&lt;/h3&gt;
+&lt;p&gt;To know more about why styles are disabled on this website visit the
+&lt;a href="http://naked.threepixeldrift.com" title="Web Standards Naked Day Host Website"&gt;
+Annual CSS Naked Day&lt;/a&gt; website for more information.&lt;/p&gt;</code></pre>
+</section> 
+          <section id="whatisgoingon"> 
+	<h2>What is going on</h2> 
+	<p>This option for those who feel a need to give their visitors a reference as to what's going on. This is not about getting traffic or making money. There are no ads on this site, nor will there ever be. This is about you, the people; getting naked. </p> 
+</section> 
+          
+	<section id="stripthestyles"> 
+<h2>Don't think, just strip</h2> 
+            <p>Here is a sample PHP function for you</p> 
+            <pre><code>&lt;?php
+function is_naked_day($d) {
+  $start = date('U', mktime(-12, 0, 0, 04, $d, date('Y')));
+  $end = date('U', mktime(36, 0, 0, 04, $d, date('Y')));
+  $z = date('Z') * -1;
+  $now = time() + $z; 
+  if ( $now >= $start &amp;&amp; $now &lt;= $end ) {
+    return true;
+  }
+  return false;
+}
+?&gt;</code></pre> 
+                        <p>Use it like this</p> 
+<pre><code> 
+&lt;head&gt;
+...
+&lt;?php
+if ( is_naked_day(9) ) {
+  echo '&lt;!-- naked day has no styles --&gt;';
+} else {
+  echo '&lt;link rel="stylesheet" type="text/css" href="styles.css" /&gt;';
+}
+?&gt;
+...
+&lt;/head&gt;
+</code></pre> </section> 
+<section id="fortyeighthours">
+<h2>Wait... isn't that 48 hours?</h2>            
+<p>That's correct. CSS Naked Day lasts for one <em>international</em> day. Technically speaking,it will be "April 9th" <em>somewhere in the world</em> for 48 hours. This is to ensure that everyone's website will be publicly nude for the entire world to see at any given time during April 9.</p> 
+</section>
+
+<section id="toolsandplugins"> 
+<h2>Tools &amp; Plugins</h2> 
+	<ul> 
+	  <li><a href="http://www.jaaulde.com/">Jim Auldridge</a> has created a nice <a href="http://code.google.com/p/php-naked-day-api/">PHP Naked Day Timer Class</a> 
+	     that has fun methods that can determine if Naked Day is <em>coming soon, if it's over, is it now, how long until...</em>. Thanks Jim. Very fun. Check out
+	     the <a href="http://www.jaaulde.com/naked_day/api_docs/">API doc</a> as well.</li> 
+	  <li><a href="http://www.ajalapus.com">Aja's</a> updated most excellent <a href="http://www.ajalapus.com/downloads/css-naked-day/">Wordpress Naked Day Plugin</a></li> 
+	  <li><a href="http://tore.darell.no/">Tore Darell</a> has provided a simple <a href="http://tore.darell.no/posts/ready_to_take_my_clothes_off">Rails Helper</a> 
+	    to go naked for 48 hours</li> 
+	  <li><a href="http://blog.josh420.com">Josh Stodola</a> has created an 
+	    <a href="http://blog.josh420.com/archives/2008/04/support-css-naked-day-easily-on-your-aspnet-web-site.aspx">ASP.net Naked Day Class</a></li>  
+	  <li><a href="http://hugi.to/blog/">Reto</a> has created a <a href="http://downloads.sourceforge.net/lifetype/1.2_cssnaked.zip?download">Naked Day plugin for the LifeType Blogging platform</a></li> 
+	  <li><a href="http://the-gay-bar.com/">Tante</a> shows us how to <a href="http://the-gay-bar.com/index.php?/archives/1253-CSS-naked-day.html">implement a snippet for Serendipity</a></li> 
+	  <li><a href="http://blog.webdistortion.com">Paul Anthony</a> has a <a href="http://blog.webdistortion.com/2008/04/08/css-naked-day-tommorow/">classic ASP snippet of code</a></li> 
+	  <li>Sasha Gerrand <a href="http://sasha.gerrand.id.au/weblog/2009/04/05/css-naked-day/">gives us a great Perl subroutine</a></li> 
+	  <li><a href="http://jefftriplett.com/">Jeff Triplett</a> gives us a nice <a href="http://www.djangosnippets.org/snippets/1421/">Django Snippet</a> for you Python folk.</li> 
+	  <li>Drupal users, <a href="http://drupal.org/project/naked">get the module</a>!</li> 
+	  <li>And if all else fails, <a href="http://www.dyatko.ru">Marat</a> threw together a <a href="http://www.dyatko.ru/nakedDay.js">nakedDay.js</a></li> 
+	</ul> 
+</section>
+  
+          
+          
+ 
+<!-- <div class="permalink"><a href=''>∞</a></div> -->
+ 
+          </div> 
+             </div> 
+ 
+ 
+           
+          
+        
+      
+  </div>    
+ 
+<div class="posting"> 
+ 
+<nav class="bottomlink"><a href="http://www.threepixeldrift.com/" title="Northern Michigan Web Designer">author</a> / <a href="http://www.eleven2.com/">hosted by</a> / <a href="http://www.dustindiaz.com/">thanks</a> / <a href"http://validator.w3.org/check?uri=http://naked.threepixeldrift.com/&charset=utf-8&doctype=HTML5&group=0&user-agent=W3C_Validator/1.767">validator</a></nav> 
+
+   
+</div>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2872960-12']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+ 
+</body> 
+</html> 

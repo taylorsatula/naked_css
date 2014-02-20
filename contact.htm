@@ -1,0 +1,42 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>New Page 1</title>
+</head>
+
+<body>
+
+<form method="POST" action="mailer.php">
+	Name:
+	<input type="text" name="name" size="19"><br>
+	<br>
+	E-Mail:
+	<input type="text" name="email" size="19"><br>
+	<br>
+	
+	<input type="checkbox" name="check[]" value="blue_color"> Blue<br>
+	<input type="checkbox" name="check[]" value="green_color"> Green<br>
+	<input type="checkbox" name="check[]" value="orange_color"> Orange<br>
+	<br>
+	<input type="radio" value="yes" name="radio"> YES<br>
+	<input type="radio" value="no" name="radio"> NO
+	<br>
+	<br>
+	<select size="1" name="drop_down">
+	<option>php</option>
+	<option>xml</option>
+	<option>asp</option>
+	<option>jsp</option>
+	</select><br>
+	<br>
+	Message:<br>
+	<textarea rows="9" name="message" cols="30"></textarea><br>
+	<br>
+	<input type="submit" value="Submit" name="submit">
+</form>
+
+</body>
+
+</html>

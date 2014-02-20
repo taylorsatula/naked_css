@@ -1,3 +1,0 @@
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^www\.nakedcss2010.threepixeldrift\.com$ [NC] 
-RewriteRule ^(.*)$ http://nakedcss2010.threepixeldrift.com/$1 [R=301,L]]

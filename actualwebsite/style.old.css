@@ -1,0 +1,170 @@
+/* @group Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* @end */
+
+html { 
+  background: url(images/background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #505050;
+}
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #fff;
+	font-size: 14px;
+	text-align: right;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	border-bottom: 1px dotted #ededed;
+	color: #ededed;
+}
+
+#document {
+	width: 500px;
+	margin-top: 75px;
+	margin-left: auto;
+	margin-right: auto;
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, .30);
+	padding: 30px;
+}
+
+header {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+h1 {
+	font-weight: 100;
+	font-size: 60px;
+}
+
+h2 {
+	font-size: 20px;
+	font-weight: 300;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+
+h2:after {
+	content: ":";	
+}
+
+#tagline {
+	font-weight: 300;
+	font-size: 12px;
+	letter-spacing: 10px;
+	margin-top: 5px;
+}
+
+hr {
+	margin-bottom: 30px;
+	border: 0;
+	color: #000;
+	background-color: #000;
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, .20);
+	height: 5px;
+}
+
+em {
+	font-style: italic;
+}
+
+p {
+	margin-bottom: 30px;
+	line-height: 1.3em;
+}
+
+footer {
+	width: 320px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 75px;
+	margin-top: 20px;
+	font-size: 14px;
+}
+
+nav {
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+footer li {
+	float: left;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+footer li:first-child {
+	margin-left: 0;
+}
+
+footer li:last-child {
+	margin-right: 0;
+}
+
+.divider {
+	margin-left: 20px;
+}
+
+q:before {
+	content: "“";
+}
+q:after {
+	content: "”";
+}

@@ -1,0 +1,155 @@
+@import "reset.css";
+
+@import "animation.css";
+
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,500);
+
+/*
+@imports commands are usually a really bad idea
+but since they are super lightweight and this
+code has an actual chance of being viewed I 
+thought I would clean it up some for readibility
+*/
+
+::selection { background-color: rgba(0, 255, 255, 0.5) }
+
+::-moz-selection { background-color: rgba(0, 255, 255, 0.5) }
+
+body { font-family: 'Lato', 'Helvetica Neue', Avenir, Helvetica, Arial, sans-serif, monospace, 'something like primordial ooze' }
+
+a {
+    color: rgb(179, 179, 179);
+    -webkit-transition: color 1s ease-in;
+    -moz-transition: color 1s ease-in;
+    -o-transition: color 1s ease-in;
+    -ms-transition: color 1s ease-in;
+    transition: color 1s ease-in;
+    text-decoration: none;
+}
+
+a:hover { color: blue }
+
+header {
+    width: 519px;
+    margin: 0 auto;
+    margin-top: 100px;
+    -webkit-animation: moveDown 2s;
+    -moz-animation: moveDown 2s;
+    animation: moveDown 2s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+h1 {
+    font-family: 'Lato', 'Helvetica Neue', Avenir, Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    font-size: 5.8em;
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
+    transform: skewY(-5deg);
+    -webkit-transform: skewY(-5deg);
+    -moz-transform: skewY(-5deg);
+    line-height: 0.9;
+    border-top: 0.02em solid black;
+    border-bottom: 0.02em solid black;
+    padding: 0.1em 0;
+    height: 1.87em;
+    width: 5.60em;
+}
+
+h1 span.adj { font-size: 1.05em }
+
+h1 small {
+    font-size: 0.25em;
+    font-weight: 300;
+    text-transform: lowercase;
+    display: block;
+    text-align: center;
+}
+
+h1 small span.block {
+    background: white;
+    padding: 0 0.35em;
+}
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 125px;
+    width: 700px;
+    position: relative;
+}
+
+section {
+    line-height: 1.5em;
+    text-align: justify;
+    margin-bottom: 50px;
+    color: #5c5c5c;
+    font-weight: 300;
+    width: 710px;
+}
+
+pre {
+	background-color: #efefef;
+	box-sizing: border-box;
+	padding: 10px;
+	width: 710px;
+	border-radius: 3px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #666;
+}
+pre, code {
+	font-family: "PT Mono";
+	overflow: scroll;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-transform: uppercase;
+    background: white;
+    padding: 0 0.35em;
+    width: 700px;
+    border-bottom: 1px solid #202020;
+    color: #202020;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+}
+
+h2 span {
+    background: #fff;
+    padding: 0 10px;
+}
+
+footer {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 60px;
+}
+
+footer a {
+    -webkit-transition: color 0.5s ease-in;
+    -moz-transition: color 0.5s ease-in;
+    -o-transition: color 0.5s ease-in;
+    -ms-transition: color 0.5s ease-in;
+    transition: color 0.5s ease-in;
+}
+
+footer li {
+    float: left;
+    margin-right: 50px;
+}
+
+footer li:last-child { margin-right: 0 }
+
+nav {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav a:hover { color: #4d4d4d }

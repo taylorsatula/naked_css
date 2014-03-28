@@ -20,6 +20,8 @@
 	<![endif]-->
 	
 	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/modernizr.custom.js"></script>
 </head>
 <body>
 
@@ -57,9 +59,30 @@
 			
 			<section id="how">
 				<h2><span>How to Participate</span></h2>
-				<p>Complete the super quick <a href="support/">signup form</a> to be alerted before April 9<sup>th</sup> of Naked CSS Day, this will give you time to add the correct scripts to your website, be added to the list of sites participating, and also alert your visitors beforehand if you feel that is necessary. Then on April 9th, simply comment out your stylesheets or use a provided script, stripping it entirely of its cosmetic design.<br><br>
-				A list has lovingly been put together for developers detailing more information about some <a href="developers/">suggested codes &amp; scripts</a> to use during the event.</p>
+				<p>Complete the super quick <a class="md-trigger md-setperspective" data-modal="modal-7">signup form</a> to be alerted before April 9<sup>th</sup> of Naked CSS Day, this will give you time to add the correct scripts to your website, be added to the list of sites participating, and also alert your visitors beforehand if you feel that is necessary. Then on April 9th, simply comment out your stylesheets or use a provided script, stripping it entirely of its cosmetic design.<br><br>
+				A list has lovingly been put together for developers detailing more information about some <a href="developers/">suggested codes &amp; scripts</a> to use during the event. </p>
 			</section>
+			
+			<div class="md-modal md-effect-7" id="modal-7">
+				<div class="md-content">
+					<h3>Join Us.</h3>
+					<div>
+						<form method="post" action="sendform.php">
+								<span class="input"></span>
+								<input type="text" name="name" placeholder="Your name" title="" autofocus autocomplete="off" required pattern="^\w+\s\w+$" required />
+								<span class="input"></span>
+								<input type="text" name="email" placeholder="Your email" required />
+								<span class="input"></span>
+								<input type="text" name="website" placeholder="Website URL" required />
+							
+							
+							<button type="submit" value="Sign Up" title="Submit form" class="fa fa-arrow-circle-right"><span>Sign up</span></button>
+							</form>
+							
+						<a class="md-close">&times;</a>
+					</div>
+				</div>
+			</div>
 			
 			
 			<section id="famous">
@@ -85,5 +108,8 @@
 			</ul>
 		</nav>
 	</footer>
+			<!-- classie.js by @desandro: https://github.com/desandro/classie -->
+			<script src="js/classie.js"></script>
+			<script src="js/modalEffects.js"></script>
 </body>
 </html>

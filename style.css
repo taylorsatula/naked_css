@@ -4,6 +4,9 @@
 
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,500);
 
+@import "responsive.css";
+
+
 /*
 @imports commands are usually a really bad idea
 but since they are super lightweight and this
@@ -15,7 +18,7 @@ thought I would clean it up some for readibility
 
 ::-moz-selection { background-color: rgba(0, 255, 255, 0.5) }
 
-body { font-family: 'Lato', 'Helvetica Neue', Avenir, Helvetica, Arial, sans-serif, monospace, 'something like primordial ooze' }
+body { font-family: 'Lato', 'Helvetica Neue', Avenir, Helvetica, Arial, sans-serif, monospace, 'something like primordial ooze';}
 
 a {
     color: rgb(179, 179, 179);
@@ -29,8 +32,11 @@ a {
 
 a:hover { color: blue }
 
+
+
 header {
     width: 519px;
+    height: 239px;
     margin: 0 auto;
     margin-top: 100px;
     -webkit-animation: moveDown 2s;
@@ -75,11 +81,10 @@ h1 small span.block {
 }
 
 main {
+	width: 700px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 125px;
-    width: 700px;
-    position: relative;
+    margin-top: 63px;
 }
 
 section {
@@ -89,6 +94,16 @@ section {
     color: #5c5c5c;
     font-weight: 300;
     width: 710px;
+}
+
+cite {
+	margin-left: 30px;
+}
+
+cite a {
+	color: inherit;
+	text-decoration: inherit;
+	font-weight: inherit;
 }
 
 pre {

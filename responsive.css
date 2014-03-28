@@ -1,0 +1,52 @@
+
+@media screen and (max-width: 768px) {
+	
+	body {
+		width: 100%;
+	}
+	main, section {
+		width: 95%;
+		padding: 0;
+		margin: 0 auto;
+	}
+	
+	h2 {
+		width: 97.5%;
+		margin-bottom: 2em;
+	}
+	
+	section {
+		padding-bottom: 2em;
+	}
+	
+	header {
+		margin-bottom: 5em;
+	}
+	
+	footer {
+		display: none;
+	}
+}
+
+/*
+Stupidly CSS can't resize fonts based on browser size
+in the way I want. Ugh.
+*/
+
+@media screen and (max-width: 550px)  {
+	header {
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 450px)  {
+	header {
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 320px)  {
+	header {
+		font-size: 10px;
+	}
+}
